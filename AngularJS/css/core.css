@@ -1,0 +1,163 @@
+/* ADD MEDIA QUERIES... */
+
+body {
+	background-color: #fefefe;
+	color: #2b2b2b;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.primary-container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+/* Primary Header Area */
+
+#primary-header {
+	background-color: #10b5b8;
+	border-bottom: 1px solid #c0c0c0;
+	height: 150px;
+}
+
+#primary-header h1 {
+	color: #fefefe;
+	display: inline-block;
+	line-height: 150px;
+	float: left;
+	font-size: 3em;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+}
+
+.nav {
+   	background: #01a5a8;
+   	border-radius: 4px;
+   	box-shadow: 0 2px 2px #aaaaaa;
+   	color: #fefefe;
+   	display: inline-block;
+   	font-size: 1.8em;
+   	margin-top: 42px;
+   	padding: 20px;
+   	text-align: center;
+   	text-decoration: none;
+   	width: 100px;
+}
+
+.nav:hover {
+	background-color: #01a5b8;
+}
+
+/* Secondary Header Area */
+
+#secondary-header {
+	border-bottom: 1px solid #c0c0c0;
+	font-size: 2.5em;
+	padding: 50px 0;
+}
+
+#secondary-header h2 {
+	font-size: 2em;
+}
+
+#secondary-header p {
+	color: #01b5b8;
+	padding-top: 25px;
+}
+
+/* Primary Section Area */
+
+#primary-section {
+	background-color: #f9f9f9;
+	padding: 40px 0 20px 0;
+}
+
+.main-links {
+	text-decoration: none;
+}
+
+.main-content {
+	background-color: #01b5b8;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px #999999;
+	color: #f0f0f0;
+	font-size: 2.5em;
+	line-height: 60px;
+	margin: 0 0 30px 0;
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+}
+
+.main-content-heading {
+	font-size: 1.3em;
+}
+
+.main-content:hover {
+	background-color: #01a5b8;
+}
+
+.blog-content-heading {
+	color: #01b5b8;
+	font-size: 4em;
+	padding-bottom: 40px;
+}
+
+.blog-content-paragraph {
+	font-size: 2.5em;
+	line-height: 50px;
+	padding-bottom: 40px;
+}
+
+/* Primary Footer Area */
+
+#primary-footer {
+	background-color: #eeeeee;
+	border-top: 1px solid #c0c0c0;
+	color: #01b5b8;
+	font-size: 1.7em;
+	padding: 45px 20px 0 20px;
+}
+
+#contentinfo {
+	display: inline;
+}
+
+#text-editor {
+	background: #1a1a1a;
+	border-radius: 5px;
+	color: #01b5b8;
+	padding: 10px 10px 16px 10px;
+	text-align: center;
+}
+
+/* Secondary Footer Area */
+
+#secondary-footer {
+	background-color: #eeeeee;
+	font-size: 1.8em;
+	line-height: 40px;
+	padding: 0 30px 35px 30px;
+}
+
+a {
+	color: #01b5b8;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#arrow-img {
+	display: block;
+	margin: 0 auto;
+}
+
+#semantics {
+	padding: 0 0 15px 0;
+}
+
+.link-decoration {
+	font-style: italic;
+}
