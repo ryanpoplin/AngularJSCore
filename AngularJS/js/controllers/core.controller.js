@@ -14,7 +14,7 @@ coreApp.controller('CoreController', function($scope) {
 
   $scope.logUser = function () {
 
-    console.log();
+    console.log($scope.items);
 
   };
 
