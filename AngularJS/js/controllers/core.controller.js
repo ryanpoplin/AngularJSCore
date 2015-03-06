@@ -8,7 +8,13 @@ coreApp.controller('CoreController', function($scope) {
 
   $scope.addUser = function () {
 
-    $scope.users.push({ name: $scope.newUser.name, city: $scope.newUser.city });
+    $scope.items.push({ name: $scope.newUser.name, city: $scope.newUser.city });
+
+  };
+
+  $scope.logUser = function () {
+
+    console.log();
 
   };
 

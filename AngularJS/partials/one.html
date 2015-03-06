@@ -4,19 +4,19 @@
 				
 			<div class="secondary-header-container">
 						
-				<input type="text" data-ng-model="filter.name" placeholder="search users...">
+				<input type="text" data-ng-model="filter.name" placeholder="search users">
 		
 				<br>
 
-				<input type="text" data-ng-model="newUser.name">
+				<label for="Username:"><input type="text" placeholder="username" data-ng-model="newUser.name"></label>
 
 				<br>
 
-				<input type="text" data-ng-model="newUser.city">
+				<label for="City:"><input type="text" placeholder="city" data-ng-model="newUser.city"></label>
 
 				<br>
 
-				<button data-ng-click="addUser()">Add User</button>
+				<button class="nav" data-ng-click="addUser()"></button>
 
 			</div>
 		
@@ -25,8 +25,10 @@
 	</header>
 	
 	<section id="primary-section">
+		
 		<div class="primary-container">
-			<article class="main-content-container">
+		
+			<article class="main-content-container" data-ng-click="logUser()">
 
 				<div class="main-content" data-ng-repeat="item in items | filter : filter.name | orderBy : 'city'">
 										
@@ -42,6 +44,6 @@
 
 			</article>	
 
-			</div>
+		</div>
 	
 	</section> 
