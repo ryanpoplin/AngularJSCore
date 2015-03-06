@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- directive to init. the application... -->
 <!-- data- for validators... -->
-<html data-ng-app="coreApp">
+<html data-ng-app="CoreApp">
 <head>
 	<meta charset="utf-8">
 	<meta viewport="device=device-width">
@@ -19,58 +19,13 @@
 		<div class="primary-container">
 			<h1>...</h1>
 			<nav id="primary-navigation">
-				<a href="#"><p class="nav">...</p></a>
-				<a href="#"><p class="nav">...</p></a>
+				<a href="#/"><p class="nav">View 1</p></a>
+				<a href="#/view2"><p class="nav">View 2</p></a>
 			</nav>
 		</div>
 	</header>
 	
-	<div data-ng-controller="CoreController">
-
-	<header id="secondary-header">
-
-		<div class="primary-container">
-		
-			<!-- stand-alone code will not run if an data-ng-controller directive is there... -->
-		
-			<div class="secondary-header-container">
-		
-				<!-- general testing... -->
-		
-				<!-- add a prop. into the $scope... -->
-		
-				<input type="text" ng-model="name" placeholder="search users...">
-		
-			</div>
-		
-		</div>
-	
-	</header>
-	
-	<section id="primary-section">
-		<div class="primary-container">
-			<article class="main-content-container">
-
-				<!-- testing... -->
-
-				<div class="main-content" data-ng-repeat="item in items | filter : name | orderBy : 'city'" data-ng-controller="CoreController">
-										
-					<h1>
-					
-						<!-- apply a filter... -->
-						{{ item.name | uppercase }}
-					
-					</h1>
-
-					<p>{{ item.city | lowercase }}</p>
-
-				</div>
-
-			</article>	
-		</div>
-	</section>
-	
-	</div>
+	<div data-ng-view=""></div>
 
 	<footer id="primary-footer">
 		<div class="primary-container">
@@ -85,7 +40,7 @@
 		</div>
 	</footer>
 	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/angular-route/angular-route.min.js"></script>
-	<script src="js/controllers/core.controller.js"></script>
+ 	<script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/controllers/core.controller.js"></script>
 </body>
 </html>

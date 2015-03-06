@@ -1,5 +1,18 @@
-// DI...
 var coreApp = angular.module('CoreApp', ['ngRoute']);
+
+coreApp.controller('CoreController', function($scope) {
+
+  $scope.items = [{name: 'Ryan Poplin', city: 'Greenville, SC'}, 
+                  {name: 'Jen Tucker', city: 'Charlotte, NC'}, 
+                  {name: 'Jen Scotts', city: 'Atlanta, GA'}];
+
+  $scope.addUser = function () {
+
+    $scope.users.push({ name: $scope.newUser.name, city: $scope.newUser.city });
+
+  };
+
+});
 
 coreApp.config(function ($routeProvider) {
 
@@ -7,21 +20,13 @@ coreApp.config(function ($routeProvider) {
     .when('/',
       {
         controller: 'CoreController',
-        templateUrl: 'partials/view.one.html'
+        templateUrl: 'partials/one.html'
       })
-    .when('/partial2',
+    .when('/view2',
       {
         controller: 'CoreController',
-        templateUrl: 'partials/view.two.html'
+        templateUrl: 'partials/two.html'
       })
     .otherwise({ redirectTo: '/' });
-
-});
-
-coreApp.controller('CoreController', function($scope) {
-
-  $scope.items = [{name: 'Ryan Poplin', city: 'Greenville, SC'}, 
-                  {name: 'Jen Tucker', city: 'Charlotte, NC'}, 
-                  {name: 'Jen Scotts', city: 'Atlanta, GA'}];
 
 });
