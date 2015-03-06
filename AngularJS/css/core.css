@@ -67,6 +67,15 @@ nav {
 	padding-top: 25px;
 }
 
+/* ... */
+#secondary-header input {
+	height: 50px;
+	width: 300px;
+	font-size: 35px;
+	text-indent: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 /* Primary Section Area */
 
 #primary-section {
@@ -96,6 +105,7 @@ nav {
 
 .main-content:hover {
 	background-color: #01a5b8;
+	cursor: pointer;
 }
 
 .blog-content-heading {
