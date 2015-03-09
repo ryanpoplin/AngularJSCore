@@ -12,12 +12,6 @@ coreApp.controller('CoreController', function($scope) {
 
   };
 
-  $scope.logUser = function () {
-
-    
-
-  };
-
 });
 
 coreApp.config(function ($routeProvider) {
