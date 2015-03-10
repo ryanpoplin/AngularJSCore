@@ -28,17 +28,17 @@
 		
 		<a href="#/view2"><div class="primary-container">
 		
-			<article class="main-content-container" data-ng-click="logUser()">
+			<article class="main-content-container" data-ng-click="logUserData()">
 
-				<div class="main-content" data-ng-repeat="item in items | filter : filter.name | orderBy : 'city'">
+				<div class="main-content" data-ng-repeat="user in users | filter : filter.name | orderBy : 'city'">
 										
 					<h1>
 					
-						{{ item.name | uppercase }}
+						{{ user.name | uppercase }}
 					
 					</h1>
 
-					<p> {{ item.city | lowercase }} </p>
+					<p> {{ user.city | lowercase }} </p>
 
 				</div>
 

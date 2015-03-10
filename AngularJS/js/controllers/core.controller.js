@@ -1,14 +1,46 @@
 var coreApp = angular.module('CoreApp', ['ngRoute']);
 
-coreApp.controller('CoreController', function($scope) {
+coreApp.factory('coreFactory', function () {
+  
+  var users = [
+    { name: 'Ryan Poplin', city: 'Simpsonville, SC' },
+    { name: 'Kendra Kent', city: 'Greenville, SC' },
+    { name: 'Byrdann Fox', city: 'Oslo, No' }
+  ];
 
-  $scope.items = [{name: 'Ryan Poplin', city: 'Greenville, SC'}, 
-                  {name: 'Jen Tucker', city: 'Charlotte, NC'}, 
-                  {name: 'Jen Scotts', city: 'Atlanta, GA'}];
+  var factory = {};
+
+  factory.getUsers = function () {
+
+    return users;
+
+  };
+
+  return factory;
+
+});
+
+coreApp.controller('CoreController', function($scope, coreFactory) {
+
+  $scope.users = [];
+
+  function init () {
+
+    $scope.users = coreFactory.getUsers();
+
+  }
+
+  init();
 
   $scope.addUser = function () {
 
-    $scope.items.push({ name: $scope.newUser.name, city: $scope.newUser.city });
+    $scope.users.push({ name: $scope.newUser.name, city: $scope.newUser.city });
+
+  };
+
+  $scope.logUserData = function () {
+
+    console.log('Need some detail data...');
 
   };
 
