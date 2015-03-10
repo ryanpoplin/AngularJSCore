@@ -2,6 +2,7 @@ var coreApp = angular.module('CoreApp', ['ngRoute']);
 
 coreApp.factory('coreFactory', function () {
   
+  // place into a .json file, and set up a 3rd party service or REST API for AJAX or Sockets...
   var users = [
     { name: 'Ryan Poplin', city: 'Simpsonville, SC' },
     { name: 'Kendra Kent', city: 'Greenville, SC' },
